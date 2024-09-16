@@ -1,0 +1,278 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  background-color: #D98555;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #131D26;
+}
+
+.logo {
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #131D26;
+  text-align: center;
+  border-top: 5px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #FFFFFF;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.selected {
+  background-color: #F2F2F2;
+  color: #131D26;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+
+.hero-content p {
+  color: #F2F2F2;
+  margin: 0 0 20px;
+}
+
+.hero-content a {
+  background-color: #D98555;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero img {
+  max-width: 40%;
+  height: auto;
+  border: 3px solid #131D26;
+}
+
+/* Products section styles */
+.product-list {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.product-list h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #082B59;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 5px solid #131D26;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.product-item h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #082B59;
+  margin: 0 0 15px 0;
+}
+
+.product-item p {
+  font-family: 'Lato', sans-serif;
+  color: #59331d;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #131D26;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* About section styles */
+.about {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border: 5px solid #131D26;
+  margin-right: 20px;
+}
+
+.about h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #082B59;
+  margin: 0 0 20px 0;
+}
+
+.about p {
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.photo {
+  width: 35%;
+}
+
+.photo img {
+  width: 100%;
+  border: 5px solid #131D26;
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 5px solid #131D26;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #082B59;
+  margin-bottom: 20px;
+}
+
+.contact address {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.contact address a {
+  color: #082B59;
+  text-decoration: none;
+}
+
+.contact address a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+  color: white;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #131D26;
+  text-align: center;
+  border-top: 5px solid #FFFFFF;
+  border-bottom: 5px solid #FFFFFF;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-content p {
+  margin: 10px 0;
+}
+
+.footer-content a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* Button styles */
+button {
+  margin-bottom: 10px;
+  background-color: #D98555;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #BF7A47;
+}
+
+/* Responsive styles */
+@media all and (max-width: 1200px) {
+  .product-item {
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 744px) {
+  .product-item {
+    width: 100%;
+  }
+  
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero img {
+    max-width: 80%;
+  }
+  
+  .photo {
+    width: 100%;
+  }
+  
+  .footer-content {
+    padding: 10px;
+  }
+}
+
+
+
+
+     
